@@ -6,7 +6,7 @@
 /*   By: eel-abed <eel-abed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 18:38:56 by eel-abed          #+#    #+#             */
-/*   Updated: 2025/04/27 17:55:58 by eel-abed         ###   ########.fr       */
+/*   Updated: 2025/05/01 15:05:41 by eel-abed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,26 +41,15 @@ void Harl::error(void)
 
 void Harl::complain(std::string level)
 {
-	void (Harl::*functions[])() = {
-		&Harl::debug,
-		&Harl::info,
-		&Harl::warning,
-		&Harl::error};
-
-	std::string levels[] = {
-		"DEBUG",
-		"INFO",
-		"WARNING",
-		"ERROR"};
-
+	void (Harl::*functions[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	std::string levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	for (int i = 0; i < 4; i++)
 	{
 		if (level == levels[i])
 		{
 			(this->*functions[i])();
-			return;
+			return ;
 		}
 	}
-
 	std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 }
