@@ -6,7 +6,7 @@
 /*   By: eel-abed <eel-abed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 17:47:54 by eel-abed          #+#    #+#             */
-/*   Updated: 2025/04/08 18:07:19 by eel-abed         ###   ########.fr       */
+/*   Updated: 2025/07/29 15:31:52 by eel-abed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,10 +92,8 @@ void PhoneBook::searchContact()
 		return;
 	}
 
-	// Utilisons std::stringstream au lieu de std::stoi)
 	std::stringstream ss(input);
 	
-	// On essaie de convertir l'entrée en entier
 	if (ss >> index && ss.eof())
 	{
 		if (index >= 0 && index < contactCount)
