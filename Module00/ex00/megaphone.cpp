@@ -29,6 +29,8 @@ int main(int argc, char **argv)
 			{
 				std::cout << (char)std::toupper(arg[j]);
 			}
+			if (i < argc - 1)
+				std::cout << " ";
 		}
 		std::cout << std::endl;
 	}
