@@ -13,7 +13,7 @@ Fixed::Fixed(const Fixed& other)
 	*this = other;
 }
 
-// modif
+//modif
 Fixed& Fixed::operator=(const Fixed& other)
 {
 	std::cout << "Copy assignment operator called" << std::endl;
@@ -24,7 +24,6 @@ Fixed& Fixed::operator=(const Fixed& other)
 	return (*this);
 }
 
-// Destructeur
 Fixed::~Fixed(void)
 {
 	std::cout << "Destructor called" << std::endl;
