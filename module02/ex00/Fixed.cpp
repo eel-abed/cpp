@@ -30,7 +30,7 @@ Fixed::~Fixed(void)
 	std::cout << "Destructor called" << std::endl;
 }
 
-// Fonction membre pour obtenir la valeur brute
+// get value
 int Fixed::getRawBits(void) const
 {
 	std::cout << "getRawBits member function called" << std::endl;
