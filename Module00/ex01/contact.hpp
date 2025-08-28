@@ -6,7 +6,7 @@
 /*   By: eel-abed <eel-abed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 17:47:20 by eel-abed          #+#    #+#             */
-/*   Updated: 2025/04/01 18:24:04 by eel-abed         ###   ########.fr       */
+/*   Updated: 2025/08/28 14:54:43 by eel-abed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,9 @@
 
 #include <string>
 
-// Classe Contact pour stocker les informations d'un contact
 class Contact
 {
 private:
-	// Variables membres privées pour stocker les informations
 	std::string firstName;
 	std::string lastName;
 	std::string nickName;
