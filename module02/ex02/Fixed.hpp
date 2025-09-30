@@ -14,10 +14,8 @@ public:
 
 	Fixed(void);
 	
-	// Nouveau constructeur prenant un entier constant
 	Fixed(const int value);
 	
-	// Nouveau constructeur prenant un flottant constant
 	Fixed(const float value);
 	
 	//recopie
@@ -32,11 +30,9 @@ public:
 	int getRawBits(void) const;
 	void setRawBits(int const raw);
 	
-	// Nouvelles fonctions de conversion
 	float toFloat(void) const;
 	int toInt(void) const;
 	
-	// Opérateurs de comparaison
 	bool operator>(const Fixed& other) const;
 	bool operator<(const Fixed& other) const;
 	bool operator>=(const Fixed& other) const;
@@ -44,19 +40,16 @@ public:
 	bool operator==(const Fixed& other) const;
 	bool operator!=(const Fixed& other) const;
 	
-	// Opérateurs arithmétiques
 	Fixed operator+(const Fixed& other) const;
 	Fixed operator-(const Fixed& other) const;
 	Fixed operator*(const Fixed& other) const;
 	Fixed operator/(const Fixed& other) const;
 	
-	// Opérateurs d'incrémentation et décrémentation
-	Fixed& operator++(void);		// pré-incrémentation
-	Fixed operator++(int);			// post-incrémentation
-	Fixed& operator--(void);		// pré-décrémentation
-	Fixed operator--(int);			// post-décrémentation
+	Fixed& operator++(void);
+	Fixed operator++(int);
+	Fixed& operator--(void);
+	Fixed operator--(int);
 	
-	// Fonctions statiques min et max
 	static Fixed& min(Fixed& a, Fixed& b);
 	static const Fixed& min(const Fixed& a, const Fixed& b);
 	static Fixed& max(Fixed& a, Fixed& b);
@@ -64,7 +57,6 @@ public:
 
 };
 
-// Surcharge de l'opérateur d'insertion
 std::ostream& operator<<(std::ostream& out, const Fixed& fixed);
 
 #endif

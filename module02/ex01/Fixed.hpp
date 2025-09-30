@@ -14,10 +14,10 @@ public:
 
 	Fixed(void);
 	
-	// Nouveau constructeur prenant un entier constant
+	// constructeur entier
 	Fixed(const int value);
 	
-	// Nouveau constructeur prenant un flottant constant
+	// constructeur float
 	Fixed(const float value);
 	
 	//recopie
@@ -38,7 +38,7 @@ public:
 
 };
 
-// Surcharge de l'opérateur d'insertion
+// surcharge
 std::ostream& operator<<(std::ostream& out, const Fixed& fixed);
 
 #endif

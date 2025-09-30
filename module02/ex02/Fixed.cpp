@@ -64,7 +64,7 @@ int Fixed::toInt(void) const
 	return this->_fixedPointValue >> _fractionalBits;
 }
 
-// Opérateurs de comparaison
+// operatieur conparaison
 bool Fixed::operator>(const Fixed& other) const
 {
 	return this->_fixedPointValue > other._fixedPointValue;
@@ -95,7 +95,7 @@ bool Fixed::operator!=(const Fixed& other) const
 	return this->_fixedPointValue != other._fixedPointValue;
 }
 
-// Opérateurs arithmétiques
+// operateur math
 Fixed Fixed::operator+(const Fixed& other) const
 {
 	Fixed result;
@@ -124,7 +124,7 @@ Fixed Fixed::operator/(const Fixed& other) const
 	return result;
 }
 
-// Opérateurs d'incrémentation et décrémentation
+// ++ --
 Fixed& Fixed::operator++(void)
 {
 	this->_fixedPointValue++;
@@ -151,7 +151,7 @@ Fixed Fixed::operator--(int)
 	return temp;
 }
 
-// Fonctions statiques min et max
+// max/min
 Fixed& Fixed::min(Fixed& a, Fixed& b)
 {
 	return (a < b) ? a : b;
@@ -172,7 +172,7 @@ const Fixed& Fixed::max(const Fixed& a, const Fixed& b)
 	return (a > b) ? a : b;
 }
 
-// Surcharge de l'opérateur d'insertion
+// surcharge
 std::ostream& operator<<(std::ostream& out, const Fixed& fixed)
 {
 	out << fixed.toFloat();

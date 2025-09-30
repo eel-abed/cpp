@@ -40,13 +40,13 @@ Fixed::~Fixed(void)
 	std::cout << "Destructor called" << std::endl;
 }
 
-// get value
+// get
 int Fixed::getRawBits(void) const
 {
 	return (this->_fixedPointValue);
 }
 
-// set value
+// set
 void Fixed::setRawBits(int const raw)
 {
 	this->_fixedPointValue = raw;
@@ -64,7 +64,7 @@ int Fixed::toInt(void) const
 	return this->_fixedPointValue >> _fractionalBits;
 }
 
-// Surcharge de l'opérateur d'insertion
+// surcharge
 std::ostream& operator<<(std::ostream& out, const Fixed& fixed)
 {
 	out << fixed.toFloat();
