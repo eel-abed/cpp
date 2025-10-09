@@ -7,7 +7,7 @@ Animal::Animal() : type("")
 
 Animal::Animal(const std::string &type) : type(type)
 {
-	std::cout << "Animal parameterized constructor called" << std::endl;
+	std::cout << "Animal param constructor called" << std::endl;
 }
 
 Animal::Animal(const Animal &other) : type(other.type)
@@ -32,7 +32,7 @@ Animal::~Animal()
 
 void Animal::makeSound() const
 {
-	std::cout << "* Generic animal sound *" << std::endl;
+	std::cout << "Animal sound meuuuh idk." << std::endl;
 }
 
 std::string Animal::getType() const
