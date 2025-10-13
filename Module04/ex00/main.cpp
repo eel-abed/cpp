@@ -16,13 +16,11 @@ j->makeSound();
 meta->makeSound();
 
 //Test Wronganimals
-std::cout << "\n--- Wrong Animals Tests ---" << std::endl;
+std::cout << "\n++++++++WRONGANIMAL TEST++++++++" << std::endl;
 const WrongAnimal* wrongAnimal = new WrongAnimal();
 const WrongAnimal* wrongCatPtr = new WrongCat();
-
 std::cout << "WrongAnimal type: " << wrongAnimal->getType() << std::endl;
 std::cout << "WrongCat type: " << wrongCatPtr->getType() << std::endl;
-
 wrongAnimal->makeSound();
 wrongCatPtr->makeSound();
 

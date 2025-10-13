@@ -11,7 +11,7 @@ public:
 	WrongCat &operator=(const WrongCat &other);
 	~WrongCat();
 
-	void makeSound() const; // Pas de virtual ici non plus !
+	void makeSound() const;
 };
 
 #endif
