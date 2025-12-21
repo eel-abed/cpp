@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-	std::cout << "=== Test 1: Create form invalide ===" << std::endl;
+	std::cout << "test1 creste invalide form" << std::endl;
 	try {
 		Form invalid("Invalid Form", 0, 50);
 		std::cout << invalid << std::endl;
@@ -12,7 +12,7 @@ int main() {
 		std::cerr << "Exception : " << e.what() << std::endl;
 	}
 
-	std::cout << "\n=== Test 2: bureau signe ===" << std::endl;
+	std::cout << "\n===test2  bureau signe=====" << std::endl;
 	try {
 		Bureaucrat ongle("Ongle", 30);
 		Form formC("Permission parking", 50, 25);
@@ -24,7 +24,7 @@ int main() {
 		std::cerr << "Exception : " << e.what() << std::endl;
 	}
 
-	std::cout << "\n=== Test 3: Bureaucrat sign grade too low ===" << std::endl;
+	std::cout << "\n===test 3 bureau grade to low sign======" << std::endl;
 	try {
 		Bureaucrat orteille("Orteille", 100);
 		Form formD("Top Secret FBI", 50, 25);
