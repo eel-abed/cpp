@@ -22,16 +22,16 @@ int main() {
 	
 	std::cout << "\n---RobotomyRequestForm Success---" << std::endl;
 	try {
-		Bureaucrat alice("Alice", 40);
-		RobotomyRequestForm robot("Bender");
+		Bureaucrat dz("DZ", 40);
+		RobotomyRequestForm robot("babe");
 		
-		std::cout << alice << std::endl;
+		std::cout << dz << std::endl;
 		std::cout << robot << std::endl;
 		
-		alice.signForm(robot);
-		alice.executeForm(robot);
-		alice.executeForm(robot); 
-		alice.executeForm(robot);
+		dz.signForm(robot);
+		dz.executeForm(robot);
+		dz.executeForm(robot); 
+		dz.executeForm(robot);
 	}
 	catch (std::exception& e) {
 		std::cerr << "Exception: " << e.what() << std::endl;

@@ -31,7 +31,7 @@ void RobotomyRequestForm::executeAction() const {
 		std::srand(std::time(NULL));
 		seeded = true;
 	}
-	
+	std::cout << "------*BRUIT DE DRILL bzz bzzz *------" << std::endl;
 	if (std::rand() % 2 == 0) {
 		std::cout << _target << " has been robotomized successfully!" << std::endl;
 	} else {

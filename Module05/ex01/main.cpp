@@ -24,7 +24,7 @@ int main() {
 		std::cerr << "Exception : " << e.what() << std::endl;
 	}
 
-	std::cout << "\n===test 3 bureau grade to low sign======" << std::endl;
+	std::cout << "\n===test 3 bureau grade too low sign======" << std::endl;
 	try {
 		Bureaucrat orteille("Orteille", 100);
 		Form formD("Top Secret FBI", 50, 25);
