@@ -12,9 +12,9 @@ int main() {
 		
 		std::cout << bob << std::endl;
 		std::cout << shrub << std::endl;
-		
 		bob.signForm(shrub);
 		bob.executeForm(shrub);
+
 	}
 	catch (std::exception& e) {
 		std::cerr << "Exception: " << e.what() << std::endl;
@@ -31,6 +31,7 @@ int main() {
 		dz.signForm(robot);
 		dz.executeForm(robot);
 		dz.executeForm(robot); 
+		
 		dz.executeForm(robot);
 	}
 	catch (std::exception& e) {
