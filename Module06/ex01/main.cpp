@@ -17,8 +17,8 @@ int main(void)
 	Data original;
 	original.value = 67;
 
-	uintptr_t raw = Serializer::serialize(&original);
-	Data *restored = Serializer::deserialize(raw);
+	uintptr_t raw = Serializer::serialize(&original); //convertir addresse en entier
+	Data *restored = Serializer::deserialize(raw); //reconv entier en pointeur
 
 	printData("Original", &original);
 	printData("Restored", restored);
