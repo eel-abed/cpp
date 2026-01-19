@@ -2,7 +2,6 @@
 #include "Bureaucrat.hpp"
 
 Form::Form() : _name("Default Form"), _isSigned(false), _gradeToSign(150), _gradeToExecute(150) {
-	std::cout << "Form default constructor called" << std::endl;
 }
 
 Form::Form(const std::string& name, int gradeToSign, int gradeToExecute) 
@@ -11,18 +10,14 @@ Form::Form(const std::string& name, int gradeToSign, int gradeToExecute)
 		throw GradeTooHighException();
 	if (gradeToSign > 150 || gradeToExecute > 150)
 		throw GradeTooLowException();
-	std::cout << "Form " << _name << " created (sign: " << _gradeToSign 
-			  << ", exec: " << _gradeToExecute << ")" << std::endl;
 }
 
 Form::Form(const Form& other) 
 	: _name(other._name), _isSigned(other._isSigned), 
 	  _gradeToSign(other._gradeToSign), _gradeToExecute(other._gradeToExecute) {
-	std::cout << "Form copy constructor called" << std::endl;
 }
 
 Form& Form::operator=(const Form& other) {
-	std::cout << "Form copy assignment operator called" << std::endl;
 	if (this != &other) {
 		_isSigned = other._isSigned;
 	}
@@ -30,7 +25,6 @@ Form& Form::operator=(const Form& other) {
 }
 
 Form::~Form() {
-	std::cout << "Form " << _name << " destroyed" << std::endl;
 }
 
 const std::string& Form::getName() const {
