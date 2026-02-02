@@ -21,4 +21,4 @@ T const &max(T const &a, T const &b)
 	return (b >= a) ? b : a;
 }
 
-#endif
+#endif W
