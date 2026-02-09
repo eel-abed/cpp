@@ -33,7 +33,7 @@ int main()
 	iter(numbers, numCount, printValue<int>);
 	std::cout << "\n";
 
-	const std::string words[] = {"hello", "from", "iter"};
+	const std::string words[] = {"allo", "c'est", "moi"};
 	const std::size_t wordCount = sizeof(words) / sizeof(words[0]);
 
 	std::cout << "Const strings: ";

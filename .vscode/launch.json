@@ -8,7 +8,7 @@
 			"type": "lldb",
 			"request": "launch",
 			"name": "Launch",
-			"program": "${workspaceFolder}/Module07/ex00/a.exe",
+			"program": "${workspaceFolder}/Module07/ex01/iter",
 			"args": [],
 			"cwd": "${workspaceFolder}"
 		}
