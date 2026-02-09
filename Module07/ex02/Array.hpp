@@ -12,12 +12,10 @@ private:
 	unsigned int _size;
 
 public:
-	// Default constructor: empty array
 	Array() : _data(NULL), _size(0)
 	{
 	}
 
-	// Constructor with unsigned int: creates array of n elements (default initialized)
 	Array(unsigned int n) : _data(NULL), _size(n)
 	{
 		if (n > 0)
@@ -26,7 +24,6 @@ public:
 		}
 	}
 
-	// Copy constructor: deep copy
 	Array(const Array &other) : _data(NULL), _size(other._size)
 	{
 		if (_size > 0)
@@ -39,17 +36,14 @@ public:
 		}
 	}
 
-	// Assignment operator: deep copy
 	Array &operator=(const Array &other)
 	{
 		if (this != &other)
 		{
-			// Clean up existing data
 			delete[] _data;
 			_data = NULL;
 			_size = 0;
 
-			// Copy new data
 			_size = other._size;
 			if (_size > 0)
 			{
@@ -63,13 +57,11 @@ public:
 		return (*this);
 	}
 
-	// Destructor
 	~Array()
 	{
 		delete[] _data;
 	}
 
-	// Subscript operator with bounds checking
 	T &operator[](unsigned int index)
 	{
 		if (index >= _size)
@@ -79,7 +71,6 @@ public:
 		return (_data[index]);
 	}
 
-	// Const subscript operator with bounds checking
 	const T &operator[](unsigned int index) const
 	{
 		if (index >= _size)
@@ -89,7 +80,6 @@ public:
 		return (_data[index]);
 	}
 
-	// Size member function
 	unsigned int size() const
 	{
 		return (_size);
