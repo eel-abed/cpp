@@ -8,8 +8,8 @@
 			"type": "lldb",
 			"request": "launch",
 			"name": "Launch",
-			"program": "${workspaceFolder}/Module07/ex02/array",
-			"args": [],
+			"program": "${workspaceFolder}/Module06/ex00/convert",
+			"args": ["a"],
 			"cwd": "${workspaceFolder}"
 		}
 

@@ -45,7 +45,6 @@ void ScalarConverter::convert(const std::string &str)
 		std::cout << "char: impossible" << std::endl;
 		std::cout << "int: impossible" << std::endl;
 
-		
 		if (isNan(input))
 		{
 			std::cout << "float: nanf" << std::endl;
@@ -66,13 +65,14 @@ void ScalarConverter::convert(const std::string &str)
 
 	char charValue = '\0';
 	bool isCharLiteral = false;
-	if (input.length() == 3 && input[0] == '\'' && input[2] == '\'')
+
+
+	if (input.length() == 1 && !std::isdigit(input[0]))
 	{
-		charValue = input[1];
+		charValue = input[0];
 		isCharLiteral = true;
 	}
 
-	
 	if (!isCharLiteral && !input.empty() && input[input.length() - 1] == 'f')
 	{
 		isFloat = true;
@@ -100,8 +100,8 @@ void ScalarConverter::convert(const std::string &str)
 	}
 
 	bool intPossible = (doubleValue >= std::numeric_limits<int>::min() &&
-					   doubleValue <= std::numeric_limits<int>::max() &&
-					   doubleValue == std::floor(doubleValue));
+						doubleValue <= std::numeric_limits<int>::max() &&
+						doubleValue == std::floor(doubleValue));
 
 	if (isCharLiteral)
 	{
