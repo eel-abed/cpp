@@ -8,7 +8,7 @@
 			"type": "lldb",
 			"request": "launch",
 			"name": "Launch",
-			"program": "${workspaceFolder}/Module08/ex00/a.exe",
+			"program": "${workspaceFolder}/Module08/ex00/easyfind",
 			"args": ["a"],
 			"cwd": "${workspaceFolder}"
 		}
