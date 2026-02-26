@@ -1,6 +1,5 @@
 #include "Span.hpp"
 
-// Orthodox Canonical Form
 Span::Span() : _maxSize(0) {}
 
 Span::Span(unsigned int N) : _maxSize(N)
@@ -22,7 +21,6 @@ Span &Span::operator=(const Span &other)
 
 Span::~Span() {}
 
-// Member functions
 void Span::addNumber(int number)
 {
 	if (_numbers.size() >= _maxSize)
@@ -60,7 +58,6 @@ int Span::longestSpan() const
 	return max - min;
 }
 
-// Getters
 unsigned int Span::getSize() const
 {
 	return _numbers.size();
@@ -71,7 +68,6 @@ unsigned int Span::getMaxSize() const
 	return _maxSize;
 }
 
-// Exception classes
 const char *Span::SpanFullException::what() const throw()
 {
 	return "Span is full, cannot add more numbers";
