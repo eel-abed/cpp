@@ -20,7 +20,6 @@ BitcoinExchange &BitcoinExchange::operator=(const BitcoinExchange &other)
 
 BitcoinExchange::~BitcoinExchange() {}
 
-// Helper function to trim whitespace
 static std::string trim(const std::string &str)
 {
 	size_t start = 0;
