@@ -8,8 +8,8 @@
 			"type": "lldb",
 			"request": "launch",
 			"name": "Launch",
-			"program": "${workspaceFolder}/Module08/ex00/easyfind",
-			"args": ["a"],
+			"program": "${workspaceFolder}/Module09/ex02/PmergeMe",
+			"args": ["3","5", "9", "7", "4"],
 			"cwd": "${workspaceFolder}"
 		}
 
